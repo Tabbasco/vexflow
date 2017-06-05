@@ -97,6 +97,10 @@ export class CanvasContext {
     return this.vexFlowCanvasContext.scale(parseFloat(x), parseFloat(y));
   }
 
+  translate(x, y) {
+    return this.vexFlowCanvasContext.translate(x, y);
+  }
+
   resize(width, height) {
     return this.vexFlowCanvasContext.resize(
         parseInt(width, 10), parseInt(height, 10));
