@@ -150,13 +150,17 @@ export class Renderer {
     }
   }
 
+  setElementSize(width, height) {
+    this.element.width = width;
+    this.element.height = height;
+  }
+
   resize(width, height) {
     if (this.backend === Renderer.Backends.CANVAS) {
       if (!this.element.getContext) {
         throw new Vex.RERR('BadElement', `Can't get canvas context from element: ${this.sel}`);
       }
-      this.element.width = width;
-      this.element.height = height;
+      this.setElementSize(width, size);
       this.ctx = Renderer.bolsterCanvasContext(this.element.getContext('2d'));
     } else {
       this.ctx.resize(width, height);
