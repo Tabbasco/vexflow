@@ -160,7 +160,7 @@ export class Renderer {
       if (!this.element.getContext) {
         throw new Vex.RERR('BadElement', `Can't get canvas context from element: ${this.sel}`);
       }
-      this.setElementSize(width, size);
+      this.setElementSize(width, height);
       this.ctx = Renderer.bolsterCanvasContext(this.element.getContext('2d'));
     } else {
       this.ctx.resize(width, height);

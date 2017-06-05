@@ -67,8 +67,8 @@ module.exports = (grunt) => {
         sourceMap: true,
       },
       tests: {
-        src: TEST_SOURCES,
-        dest: TARGET_TESTS,
+        src: SOURCES,
+        dest: TARGET_RAW,
       },
     },
     webpack: {
@@ -77,7 +77,6 @@ module.exports = (grunt) => {
       watch: Object.assign({}, webpackCommon, {
         watch: true,
         keepalive: true,
-        failOnError: false,
         watchDelay: 0,
       }),
     },
