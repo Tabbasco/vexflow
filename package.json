@@ -17,6 +17,9 @@
     "url": "https://github.com/0xfe/vexflow/issues"
   },
   "devDependencies": {
+    "babel": "^6.2.4",
+    "babel-runtime": "^6.2.4",
+    "babel-core": "^6.2.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-object-assign": "^6.8.0",
@@ -47,7 +50,7 @@
     "qunit": "^0.9.1",
     "raphael": "^2.1.0",
     "slimerjs": "^0.906.2",
-    "webpack": "*",
+    "webpack": "1.15.0",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
@@ -66,5 +69,8 @@
     "notation",
     "guitar",
     "tablature"
-  ]
+  ],
+  "dependencies": {
+    "webpack": "^1.15.0"
+  }
 }
